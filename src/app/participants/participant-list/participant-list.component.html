@@ -1,0 +1,10 @@
+<h2>Participants</h2>
+<nav>
+  <a style="cursor: pointer;" (click)="onFetchData()">Get list of Participants</a>
+</nav>
+
+<ul>
+  <li *ngFor="let participant of participants" >
+    <span>{{participant.id}}</span> {{participant.name}} | {{participant.location}} | {{participant.email}}
+  </li>
+</ul>
