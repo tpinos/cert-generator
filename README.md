@@ -6,22 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Base de datos 
+En firebase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Falta
+Full!!! 
+0. cargar un archivo csv con los datos de los participantes (nombre, email). Pero un workaround es generar el archivo json con otra aplicación e importar ese archivo a firebase.
 
-## Build
+1. Generar el certificado en PDF con los datos del participante. 
+  a. Una opción es hacer el certificado en Html y exportar a Pdf
+  b. Otra es el archivo pdf que están en la carpeta /assets es un form, se podría ingresar el valor correspondiente (nombre)
+  
+2. Enviar el certificado a la direccíon de correo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Modificar el status del participante para indicar que ya se le envió un certificado (el campo status todavía no está creado en la base)
