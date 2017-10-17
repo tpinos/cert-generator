@@ -9,15 +9,24 @@ import { ParticipantDetailComponent } from './participants/participant-detail/pa
 import { ParticipantListComponent } from './participants/participant-list/participant-list.component';
 import { DataStorageService } from './shared/data-storage.service';
 
+import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './core/header/header.component';
+import { ParticipantStartComponent } from './participants/participant-start/participant-start.component';
+import { CertificateViewComponent } from './certificates/certificate-view/certificate-view.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     ParticipantDetailComponent,
-    ParticipantListComponent
+    ParticipantListComponent,
+    HeaderComponent,
+    ParticipantStartComponent,
+    CertificateViewComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     ParticipantService,

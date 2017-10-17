@@ -22,9 +22,6 @@ export class DataStorageService {
       .map(
         (participants)=>{
           console.log(participants);
-          for(let participant of participants){
-            console.log(participant['name']);
-          }
           return participants;
         }
       ).subscribe(

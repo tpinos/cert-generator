@@ -32,11 +32,13 @@ export class ParticipantService {
       return this.participants.slice();
   }
 
+  getParticipant(index: number) {
+    console.log('index ' + index);
+    return this.participants[index];
+  }
+
   setParticipants(participants: Participant[]){
     this.participants = participants;
-    for(let part of this.participants){
-      console.log(part['email']);
-    }
     this.participantsChanged.next(this.participants.slice());
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ParticipantService } from '../participant.service';
 import { Participant } from '../participant.model';
 import { Subscription } from 'rxjs/Subscription';
@@ -17,6 +17,9 @@ export class ParticipantListComponent implements OnInit {
 
   participants: Participant[] = [];
   subscription: Subscription;
+
+  @Input() participant: Participant;
+  @Input() index: number;
 
   ngOnInit() {
     this.subscription = this.participantService.participantsChanged
